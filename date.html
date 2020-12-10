@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div> 2020 - 06 - 18 <div>
+  <script>
+    /* Date() */
+    var now_d = new Date();
+    // var now_d = new Date('1 1 ,2018,5:20:00');
+    // var now_d = new Date(2018, 0 ,1);
+    console.log(now_d);
+
+
+    // getDate() 返回 Date 对象的一个月中的每一天，其值介于1～31之间
+    var date_ = now_d.getDate();
+    console.log('日期：',date_);
+
+    // getDay() 返回 Date 对象的星期中的每一天，其值介于0～6之间（注：0-周日）
+    var week = now_d.getDay();
+    console.log('星期：',week);
+
+    // getFullYear() 返回 Date 对象的年份，其值为4位数
+    var year = now_d.getFullYear();
+    console.log('年份：',year);
+
+    // getMonth() 返回 Date 对象的月份，其值介于0～11之间（注：0-1月份）
+    var month = now_d.getMonth();
+    console.log('月份：',month)
+
+
+
+    // getHours() 返回 Date 对象的小时数，其值介于0～23之间
+    var h = now_d.getHours();
+    // getMinutes() 返回 Date 对象的分钟数，其值介于0～59之间
+    var min = now_d.getMinutes();
+    // getSeconds() 返回 Date 对象的秒数，其值介于0～59之间
+    var sec = now_d.getSeconds();
+    // 毫秒：
+    var m_sec = now_d.getMilliseconds();
+    console.log('时分秒：',h,min,sec,m_sec);
+
+    // 时间戳  ；1970年1月1日0时，距今的毫秒数
+    var time = now_d.getTime();
+    console.log(time);
+
+
+
+  </script>
+</body>
+</html>
